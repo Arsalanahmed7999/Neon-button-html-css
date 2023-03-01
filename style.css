@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 300px;
+    outline: 5px solid yellow;
+    border: none;
+    border-radius: 5px;
+    transform: skewX(-20deg);
+    outline-offset: 10px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: serif;
+    background: linear-gradient(to right, green, yellow);
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 0 10px white, 0 0 20px yellow, 0 0 40px green, 0 0 80px yellow, 0 0 160px yellow;
+}
+
+
+span{
+    color: white;
+    margin: 0px 3px;
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 40px green;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+span:nth-child(1){
+    animation-delay: 0.1s;
+}
+span:nth-child(2){
+    animation-delay: 0.2s;
+}
+span:nth-child(3){
+    animation-delay: 0.3s;
+}
+span:nth-child(4){
+    animation-delay: 0.4s;
+}
+span:nth-child(5){
+    animation-delay: 0.5s;
+}
